@@ -19,6 +19,23 @@ public class Bai10 {
             else{
                 System.err.println("\""+str1+"\""+ " is too short!");
             }
+            String newStr3 = newStr1 + newStr2;
+            System.out.println("New string is " + "\"" + newStr3 + "\"");
+            if (str1.equals(str2)) {
+                System.out.println("Two string is same (not ignoring case)");
+            } else {
+                System.out.println("Two string is not same (not ignoring case)");
+            }
+            if (str1.equalsIgnoreCase(str2)) {
+                System.out.println("Two string is same");
+            } else {
+                System.out.println("Two string is not same");
+            }
+            int fromIndex = 0;
+            while (str1.indexOf(str2, fromIndex) != -1){
+                System.out.println(fromIndex);
+                fromIndex++;
+            }
         }
     } 
 } 
